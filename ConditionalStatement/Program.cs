@@ -20,11 +20,12 @@ namespace ConditionalStatement
 
                 DateTime dob;
 
+                // formato gg/mm/yyyy
                 string dobText = Console.ReadLine();
 
                 try
                 {
-                    dob = DateTime.ParseExact(dobText, "MM yyyy dd", CultureInfo.InvariantCulture);
+                    dob = DateTime.Parse(dobText);
 
                     // DateTime.Now => data attuale
 
