@@ -1,0 +1,15 @@
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Operators\bin\Debug\net7.0\Operators.exe
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Operators\bin\Debug\net7.0\Operators.deps.json
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Operators\bin\Debug\net7.0\Operators.runtimeconfig.json
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Operators\bin\Debug\net7.0\Operators.dll
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Operators\bin\Debug\net7.0\Operators.pdb
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Operators\obj\Debug\net7.0\Operators.csproj.AssemblyReference.cache
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Operators\obj\Debug\net7.0\Operators.GeneratedMSBuildEditorConfig.editorconfig
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Operators\obj\Debug\net7.0\Operators.AssemblyInfoInputs.cache
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Operators\obj\Debug\net7.0\Operators.AssemblyInfo.cs
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Operators\obj\Debug\net7.0\Operators.csproj.CoreCompileInputs.cache
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Operators\obj\Debug\net7.0\Operators.dll
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Operators\obj\Debug\net7.0\refint\Operators.dll
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Operators\obj\Debug\net7.0\Operators.pdb
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Operators\obj\Debug\net7.0\Operators.genruntimeconfig.cache
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Operators\obj\Debug\net7.0\ref\Operators.dll

@@ -1,0 +1,15 @@
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Literals\bin\Debug\net7.0\Literals.exe
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Literals\bin\Debug\net7.0\Literals.deps.json
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Literals\bin\Debug\net7.0\Literals.runtimeconfig.json
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Literals\bin\Debug\net7.0\Literals.dll
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Literals\bin\Debug\net7.0\Literals.pdb
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Literals\obj\Debug\net7.0\Literals.csproj.AssemblyReference.cache
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Literals\obj\Debug\net7.0\Literals.GeneratedMSBuildEditorConfig.editorconfig
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Literals\obj\Debug\net7.0\Literals.AssemblyInfoInputs.cache
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Literals\obj\Debug\net7.0\Literals.AssemblyInfo.cs
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Literals\obj\Debug\net7.0\Literals.csproj.CoreCompileInputs.cache
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Literals\obj\Debug\net7.0\Literals.dll
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Literals\obj\Debug\net7.0\refint\Literals.dll
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Literals\obj\Debug\net7.0\Literals.pdb
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Literals\obj\Debug\net7.0\Literals.genruntimeconfig.cache
+D:\LEZIONI\ITS\MAAT02\Progetti\Lezione_2\Literals\obj\Debug\net7.0\ref\Literals.dll
