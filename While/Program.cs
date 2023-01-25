@@ -4,77 +4,91 @@
     {
         static void Main(string[] args)
         {
-            int? num1 = null;
-            int? num2 = null;
-            string operazione = "";
-            int? result = null;
+            var restart = true;
 
-            // VERIFICA PRIMO NUMERO
-
-            while (num1 == null)
+            while (restart)
             {
-                try
+                int? num1 = null;
+                int? num2 = null;
+                string operazione = "";
+                int? result = null;
+
+                // VERIFICA PRIMO NUMERO
+
+                while (num1 == null)
                 {
-                    Console.WriteLine("Inserisci il primo numero:");
-                    num1 = int.Parse(Console.ReadLine());
+                    try
+                    {
+                        Console.WriteLine("Inserisci il primo numero:");
+                        num1 = int.Parse(Console.ReadLine());
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Il primo numero non è valido '" + num1 + "'");
+                    }
                 }
-                catch
+
+                // VERIFICA SECONDO NUMERO
+
+                while (num2 == null)
                 {
-                    Console.WriteLine("Il primo numero non è valido '" + num1 + "'");
+                    try
+                    {
+                        Console.WriteLine("Inserisci il secondo numero:");
+                        num2 = int.Parse(Console.ReadLine());
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Il secondo numero non è valido '" + num2 + "'");
+                    }
                 }
-            }
 
-            // VERIFICA SECONDO NUMERO
+                // VERIFICA L'OPERAZIONE
 
-            while (num2 == null)
-            {
-                try
+                while (operazione != "+" && operazione != "-" && operazione != "*" && operazione != "/")
                 {
-                    Console.WriteLine("Inserisci il secondo numero:");
-                    num2 = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Inserisci il l'operazione: (+, -, *, /)");
+                    operazione = Console.ReadLine();
+
+                    switch (operazione)
+                    {
+                        case "+":
+                            {
+                                result = num1 + num2;
+                                break;
+                            }
+                        case "-":
+                            {
+                                result = num1 - num2;
+                                break;
+                            }
+                        case "*":
+                            {
+                                result = num1 * num2;
+                                break;
+                            }
+                        case "/":
+                            {
+                                result = num1 / num2;
+                                break;
+                            }
+                        default:
+                            {
+                                Console.WriteLine("Operazione '" + operazione + "' non gestita");
+                                break;
+                            }
+                    }
                 }
-                catch
+
+                if (result != null)
                 {
-                    Console.WriteLine("Il secondo numero non è valido '" + num2 + "'");
+                    Console.WriteLine($"{num1} {operazione} {num2} = {result}");
                 }
-            }
 
-            // VERIFICA L'OPERAZIONE
-            Console.WriteLine("Inserisci il l'operazione: (+, -, *, /)");
-            operazione = Console.ReadLine();
 
-            switch (operazione)
-            {
-                case "+":
-                    {
-                        result = num1 + num2;
-                        break;
-                    }
-                case "-":
-                    {
-                        result = num1 - num2;
-                        break;
-                    }
-                case "*":
-                    {
-                        result = num1 * num2;
-                        break;
-                    }
-                case "/":
-                    {
-                        result = num1 / num2;
-                        break;
-                    }
-                default:
-                    {
-                        Console.WriteLine("Operazione '" + operazione + "' non gestita");
-                        break;
-                    }
-            }
+                Console.WriteLine($"Vuoi effettuare una nuova operazione? 1 = si, 2 = no");
 
-            if (result != null)
-            {
-                Console.WriteLine($"{num1} {operazione} {num2} = {result}");
+                restart = Console.ReadLine() == "1";
             }
         }
     }

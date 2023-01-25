@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch", "Switch\Switch.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "While", "While\While.csproj", "{5D525416-038F-4D71-9EB7-95D4A36C5BB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{93F68288-3442-4CDD-AD40-4E4B2D42517F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "For", "For\For.csproj", "{7E61E770-AA4C-4859-BE5B-4270ED987841}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{5D525416-038F-4D71-9EB7-95D4A36C5BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D525416-038F-4D71-9EB7-95D4A36C5BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D525416-038F-4D71-9EB7-95D4A36C5BB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93F68288-3442-4CDD-AD40-4E4B2D42517F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F68288-3442-4CDD-AD40-4E4B2D42517F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F68288-3442-4CDD-AD40-4E4B2D42517F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F68288-3442-4CDD-AD40-4E4B2D42517F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E61E770-AA4C-4859-BE5B-4270ED987841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E61E770-AA4C-4859-BE5B-4270ED987841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E61E770-AA4C-4859-BE5B-4270ED987841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E61E770-AA4C-4859-BE5B-4270ED987841}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
