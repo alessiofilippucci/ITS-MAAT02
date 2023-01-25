@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace ConditionalStatement
+namespace Exercise
 {
     internal class Program
     {
