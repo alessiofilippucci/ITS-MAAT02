@@ -58,25 +58,58 @@ namespace Exercise
                     Console.WriteLine("Inserisci il l'operazione: (+, -, *, /)");
                     operazione = Console.ReadLine();
 
-                    if (operazione == "+")
+                    //// IF-ELSE-IF
+
+                    //if (operazione == "+")
+                    //{
+                    //    result = num1 + num2;
+                    //}
+                    //else if (operazione == "-")
+                    //{
+                    //    result = num1 - num2;
+                    //}
+                    //else if (operazione == "*")
+                    //{
+                    //    result = num1 * num2;
+                    //}
+                    //else if (operazione == "/")
+                    //{
+                    //    result = num1 / num2;
+                    //}
+                    //else
+                    //{
+                    //    Console.WriteLine("Operazione '" + operazione + "' non gestita");
+                    //}
+
+                    // SWITCH
+
+                    switch (operazione)
                     {
-                        result = num1 + num2;
-                    }
-                    else if (operazione == "-")
-                    {
-                        result = num1 - num2;
-                    }
-                    else if (operazione == "*")
-                    {
-                        result = num1 * num2;
-                    }
-                    else if (operazione == "/")
-                    {
-                        result = num1 / num2;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Operazione '" + operazione + "' non gestita");
+                        case "+":
+                            {
+                                result = num1 + num2;
+                                break;
+                            }
+                        case "-":
+                            {
+                                result = num1 - num2;
+                                break;
+                            }
+                        case "*":
+                            {
+                                result = num1 * num2;
+                                break;
+                            }
+                        case "/":
+                            {
+                                result = num1 / num2;
+                                break;
+                            }
+                        default:
+                            {
+                                Console.WriteLine("Operazione '" + operazione + "' non gestita");
+                                break;
+                            }
                     }
                 }
                 catch
