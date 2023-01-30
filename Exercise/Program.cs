@@ -6,21 +6,51 @@ namespace Exercise
     {
         static void Main(string[] args)
         {
-            int num1 = 0;
-            int num2 = 0;
-            string operazione = "";
-            int? result = null;
+            var restart = true;
 
-            try
+            while (restart)
             {
-                Console.WriteLine("Inserisci il primo numero:");
-                num1 = int.Parse(Console.ReadLine());
+                int? num1 = null;
+                int? num2 = null;
+                string operazione = "";
+                int? result = null;
 
-                try
+                // VERIFICA PRIMO NUMERO
+
+                do
                 {
-                    Console.WriteLine("Inserisci il secondo numero:");
-                    num2 = int.Parse(Console.ReadLine());
+                    try
+                    {
+                        Console.WriteLine("Inserisci il primo numero:");
+                        num1 = int.Parse(Console.ReadLine());
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Il primo numero non è valido '" + num1 + "'");
+                    }
+                }
+                while (num1 == null);
 
+                // VERIFICA SECONDO NUMERO
+
+                do
+                {
+                    try
+                    {
+                        Console.WriteLine("Inserisci il secondo numero:");
+                        num2 = int.Parse(Console.ReadLine());
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Il secondo numero non è valido '" + num2 + "'");
+                    }
+                }
+                while (num2 == null);
+
+                // VERIFICA L'OPERAZIONE
+
+                do
+                {
                     Console.WriteLine("Inserisci il l'operazione: (+, -, *, /)");
                     operazione = Console.ReadLine();
 
@@ -53,19 +83,18 @@ namespace Exercise
                             }
                     }
                 }
-                catch
-                {
-                    Console.WriteLine("Il secondo numero non è valido '" + num2 + "'");
-                }
-            }
-            catch
-            {
-                Console.WriteLine("Il primo numero non è valido '" + num1 + "'");
-            }
+                while (operazione != "+" && operazione != "-" && operazione != "*" && operazione != "/");
 
-            if(result != null)
-            {
-                Console.WriteLine($"{num1} {operazione} {num2} = {result}");
+
+                if (result != null)
+                {
+                    Console.WriteLine($"{num1} {operazione} {num2} = {result}");
+                }
+
+
+                Console.WriteLine($"Vuoi effettuare una nuova operazione? 1 = si, 2 = no");
+
+                restart = Console.ReadLine() == "1";
             }
         }
     }

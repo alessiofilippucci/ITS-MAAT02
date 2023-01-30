@@ -44,6 +44,8 @@ namespace For
                 }
             }
 
+            //Console.WriteLine("Ci sono " + counterPari + " numeri PARI e sono:");
+            //Console.WriteLine("Ci sono {0} numeri PARI e sono", counterPari);
             Console.WriteLine($"Ci sono {counterPari} numeri PARI e sono:");
 
             for (int i = 0; i < numbersPari.Length; i++)
@@ -59,6 +61,26 @@ namespace For
             for (int i = 0; i < numbersDispari.Length; i++)
                 if (numbersDispari[i] != null)
                     Console.WriteLine($"{numbersDispari[i]}");
+
+
+
+
+
+            // STATEMENT continue
+
+            //string text = "Ciao, sono Alessio!";
+
+            //for (int i = 0; i < text.Length; i++)
+            //{
+            //    var character = text[i];
+
+            //    if (i >= 8 && i <= 10)
+            //    {
+            //        continue;
+            //    }
+
+            //    Console.WriteLine(character);
+            //}
         }
     }
 }
