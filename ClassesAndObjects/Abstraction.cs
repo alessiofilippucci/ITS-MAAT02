@@ -9,7 +9,7 @@
 
     // square class inheriting
     // the Shape class
-    class Square : Shape
+    public class Square : Shape
     {
 
         // private data member
