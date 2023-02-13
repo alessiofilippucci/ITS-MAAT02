@@ -22,10 +22,19 @@
 
         public void Rotola(double forza)
         {
-            int pippo;
+            double coeff = 1;
 
-            coordinate[0] += forza * 0.50;
-            coordinate[1] += forza * 0.50;
+            if (materiale == "Pietra")
+            {
+                coeff = 0.01;
+            }
+            else if (materiale == "Stoffa")
+            {
+                coeff = 2;
+            }
+
+            coordinate[0] += forza * coeff;
+            coordinate[1] += forza * coeff;
         }
 
     }

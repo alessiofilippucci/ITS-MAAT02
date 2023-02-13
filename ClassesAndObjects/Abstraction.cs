@@ -1,7 +1,7 @@
 ﻿namespace ClassesAndObjects
 {
     // abstract class
-    abstract class Shape
+    public abstract class Shape
     {
         // abstract method
         public abstract int Area();
