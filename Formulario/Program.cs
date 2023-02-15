@@ -11,7 +11,7 @@
 
         static void Start()
         {
-            Calculator calcolatrice = new Calculator();
+            Formulario calcolatrice = new Formulario();
 
             calcolatrice.Calculate();
 

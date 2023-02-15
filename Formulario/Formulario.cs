@@ -2,7 +2,7 @@
 
 namespace Calcolatrice
 {
-    public class Calculator
+    public class Formulario
     {
         int num1;
         int num2;
@@ -10,7 +10,7 @@ namespace Calcolatrice
 
         private double result;
 
-        public Calculator()
+        public Formulario()
         {
             Reset();
 
