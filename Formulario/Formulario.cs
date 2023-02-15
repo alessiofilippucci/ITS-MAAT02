@@ -1,38 +1,14 @@
-﻿using System;
+﻿using Formulario;
+using System;
 
 namespace Calcolatrice
 {
     public class Formulario
     {
-        int num1;
-        int num2;
-        string operationSymbol;
-
-        private double result;
+        Shape shape = new Shape();
 
         public Formulario()
         {
-            Reset();
-
-            num1 = SetNumber();
-            num2 = SetNumber();
-        }
-
-        public double GetResult()
-        {
-            return result;
-        }
-
-        public void PrintResult()
-        {
-            Console.WriteLine($"\n{num1} {operationSymbol} {num2} = {result}");
-        }
-
-        public void Reset()
-        {
-            num1 = 0;
-            num2 = 0;
-            operationSymbol = "";
         }
 
         private int SetNumber()
@@ -53,38 +29,13 @@ namespace Calcolatrice
             }
         }
 
-        private int Addizione()
+        public void ChooseShape()
         {
-            return num1 + num2;
-        }
-
-        private int Sottrazione()
-        {
-            return num1 - num2;
-        }
-
-        private int Moltiplicazione()
-        {
-            return num1 * num2;
-        }
-
-        private int Divisione()
-        {
-            return num1 / num2;
-        }
-
-        private double DivisioneConResto()
-        {
-            return num1 / (double)num2;
-        }
-
-        public void Calculate()
-        {
-            Console.WriteLine($"\nQuale operazione si vuole effettuare");
-            Console.WriteLine($"1 - Addizione");
-            Console.WriteLine($"2 - Sottrazione");
-            Console.WriteLine($"3 - Moltiplicazione");
-            Console.WriteLine($"4 - Divisione");
+            Console.WriteLine($"\nQuale figura si vuole usare");
+            Console.WriteLine($"1 - Triangolo");
+            Console.WriteLine($"2 - Quadrato");
+            Console.WriteLine($"3 - Rettangolo");
+            Console.WriteLine($"4 - Cerchio");
 
             Console.WriteLine();
 
@@ -94,34 +45,22 @@ namespace Calcolatrice
             {
                 case "1":
                     {
-                        operationSymbol = "+";
-                        result = Addizione();
+                        shape = new Triangle();
                         break;
                     }
                 case "2":
                     {
-                        operationSymbol = "-";
-                        result = Sottrazione();
+                        shape = new Square();
                         break;
                     }
                 case "3":
                     {
-                        operationSymbol = "*";
-                        result = Moltiplicazione();
+                        shape = new Rectangle();
                         break;
                     }
                 case "4":
                     {
-                        operationSymbol = "/";
-                        Console.WriteLine($"\nVisualizzare il resto? (y = si, n = No)");
-
-                        bool resto = Console.ReadLine() == "y";
-
-                        if (resto)
-                            result = DivisioneConResto();
-                        else
-                            result = Divisione();
-
+                        shape = new Circle();
                         break;
                     }
                 default:
@@ -130,7 +69,7 @@ namespace Calcolatrice
                         Console.WriteLine("\nOpzione scelta non valida");
                         Console.ForegroundColor = ConsoleColor.Gray;
 
-                        Calculate();
+                        ChooseShape();
                         break;
                     }
             }

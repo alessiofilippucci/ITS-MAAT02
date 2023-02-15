@@ -4,20 +4,20 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"Calcolatrice (c)Sharp Inc. 2023");
+            Console.WriteLine($"Formulario Euclide & Co. 2023");
 
             Start();
         }
 
         static void Start()
         {
-            Formulario calcolatrice = new Formulario();
+            Formulario formulario = new Formulario();
 
-            calcolatrice.Calculate();
+            formulario.Calculate();
 
-            calcolatrice.PrintResult();
+            formulario.PrintResult();
 
-            Console.WriteLine($"\nChiudere la calcolatrice? (y = si, n = No)");
+            Console.WriteLine($"\nChiudere il formulario? (y = si, n = No)");
 
             bool close = Console.ReadLine() == "y";
 
