@@ -112,24 +112,32 @@ namespace Calcolatrice
                     }
                 case "4":
                     {
-                        operationSymbol = "/";
-                        Console.WriteLine($"\nVisualizzare il resto? (y = si, n = No)");
-
-                        bool resto = Console.ReadLine() == "y";
-
-                        if (resto)
-                            result = DivisioneConResto();
+                        if (num2 == 0)
+                        {
+                            if (num1 == 0)
+                                PrintError("\nIl dividendo e il divisore non possono essere uguali a 0");
+                            else
+                                PrintError("\nIl divisore non può essere uguale a 0");
+                            Calculate();
+                        }
                         else
-                            result = Divisione();
+                        {
+                            operationSymbol = "/";
+                            Console.WriteLine($"\nVisualizzare il resto? (y = si, n = No)");
+
+                            bool resto = Console.ReadLine() == "y";
+
+                            if (resto)
+                                result = DivisioneConResto();
+                            else
+                                result = Divisione();
+                        }
 
                         break;
                     }
                 default:
                     {
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("\nOpzione scelta non valida");
-                        Console.ForegroundColor = ConsoleColor.Gray;
-
+                        PrintError("\nOpzione scelta non valida");
                         Calculate();
                         break;
                     }
