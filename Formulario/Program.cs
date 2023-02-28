@@ -1,4 +1,6 @@
-﻿namespace Calcolatrice
+﻿using Formulario.Classes;
+
+namespace Formulario
 {
     public class Program
     {
@@ -11,11 +13,9 @@
 
         static void Start()
         {
-            Formulario formulario = new Formulario();
+            MyFormulario formulario = new MyFormulario();
 
-            formulario.Calculate();
-
-            formulario.PrintResult();
+            formulario.ChooseShape();
 
             Console.WriteLine($"\nChiudere il formulario? (y = si, n = No)");
 

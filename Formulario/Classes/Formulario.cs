@@ -1,32 +1,13 @@
-﻿using Formulario;
-using System;
+﻿using Formulario.Classes.Shapes;
 
-namespace Calcolatrice
+namespace Formulario.Classes
 {
-    public class Formulario
+    public class MyFormulario
     {
-        Shape shape = new Shape();
+        Shape shape;
 
-        public Formulario()
+        public MyFormulario()
         {
-        }
-
-        private int SetNumber()
-        {
-            Console.WriteLine($"\nInserisci un numero intero:");
-
-            string _num = Console.ReadLine();
-
-            try
-            {
-                int num = int.Parse(_num);
-                return num;
-            }
-            catch
-            {
-                PrintError($"Il numero inserito non è valido ({_num})");
-                return SetNumber();
-            }
         }
 
         public void ChooseShape()
@@ -65,22 +46,13 @@ namespace Calcolatrice
                     }
                 default:
                     {
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("\nOpzione scelta non valida");
-                        Console.ForegroundColor = ConsoleColor.Gray;
-
+                        Utils.PrintError("\nOpzione scelta non valida");
                         ChooseShape();
-                        break;
+                        return;
                     }
             }
-        }
-
-        private void PrintError(string message)
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(message);
-            Console.ForegroundColor = ConsoleColor.Gray;
-
+            
+            shape.MakeChoice();
         }
     }
 }
